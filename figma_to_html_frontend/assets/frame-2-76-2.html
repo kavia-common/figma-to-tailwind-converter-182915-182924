@@ -1,79 +1,829 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, viewport-fit=cover"
-  />
-  <title>Frame 2 (76:2) - Pixel Perfect Export</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- If the JSON specifies fonts, import them here. You may add additional @import(s) in the CSS file as needed. -->
-  <link rel="stylesheet" href="./frame-2-76-2.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frame 2 - Owly HOME LOANS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'inter': ['Inter', 'sans-serif'],
+          },
+          colors: {
+            'brand-orange': '#E87A41',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
-<body>
-  <!-- Root artboard container. Dimensions will match the Figma frame as defined in CSS. -->
-  <div id="frame-2-76-2" class="artboard">
-    <!--
-      Layer placeholders:
-      The structure below uses grouped containers ready to receive images and text according to the Figma JSON.
-      Each element has a stable id/class to allow CSS absolute positioning with precise dimensions and styles.
-      Note: Image src paths must match exactly those in assets/figmaimages/ as referenced by the JSON.
-    -->
+<body class="bg-[#fdfdfd] overflow-x-hidden">
+  <!-- Main Container: 1440x6981 -->
+  <div class="w-[1440px] mx-auto relative bg-white">
+    
+    <!-- Header Navigation: Frame 13 -->
+    <header class="w-full h-[100px] bg-white border-b border-gray-200 flex items-center justify-between px-[100px] relative">
+      <!-- Logo -->
+      <img src="/assets/figmaimages/figma_image_76_11.png" alt="Logo" class="h-12 w-auto">
+      
+      <!-- Navigation Menu -->
+      <nav class="flex items-center gap-8">
+        <a href="#" class="text-black font-medium text-base hover:text-brand-orange transition-colors">Home</a>
+        <a href="#" class="text-gray-600 font-normal text-base hover:text-brand-orange transition-colors">About us</a>
+        <a href="#" class="text-gray-600 font-normal text-base hover:text-brand-orange transition-colors">loans provided</a>
+        <a href="#" class="text-gray-600 font-normal text-base hover:text-brand-orange transition-colors">tools & calculator</a>
+        <a href="#" class="text-gray-600 font-normal text-base hover:text-brand-orange transition-colors">Contact</a>
+      </nav>
+      
+      <!-- Login Button -->
+      <div class="flex items-center gap-2 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors cursor-pointer">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none">
+          <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="black"/>
+          <path d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z" fill="black"/>
+        </svg>
+        <span class="text-black font-medium">Login</span>
+      </div>
+    </header>
 
-    <!-- Example background (if specified in JSON; color and size are set in CSS) -->
-    <div class="layer layer-bg" aria-hidden="true"></div>
+    <!-- Hero Section: Frame 15 -->
+    <section class="w-full h-[601px] relative flex items-center justify-between px-[100px] overflow-hidden">
+      <!-- Decorative coins -->
+      <div class="absolute left-[136px] top-[-130px] w-[519px] h-[727px] opacity-10"></div>
+      
+      <!-- Hero Content -->
+      <div class="relative z-10 max-w-[650px]">
+        <h1 class="text-[56px] leading-tight font-bold text-gray-900 mb-4">
+          Simplify all your banking and loan methods
+        </h1>
+        <p class="text-lg text-gray-600 mb-8">
+          Streamline your banking and loan processes effortlessly
+        </p>
+        
+        <!-- Loan Types Grid -->
+        <div class="grid grid-cols-3 gap-6 mt-12">
+          <!-- Home Loans -->
+          <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-100">
+            <div class="w-12 h-12 mb-4">
+              <img src="/assets/figmaimages/figma_image_76_89.svg" alt="Home Loans" class="w-full h-full">
+            </div>
+            <h3 class="text-base font-semibold text-gray-900 mb-2">Home Loans</h3>
+            <svg class="w-4 h-4 text-brand-orange" viewBox="0 0 13 10" fill="currentColor">
+              <path d="M7.5 1L12 5L7.5 9M12 5H1"/>
+            </svg>
+          </div>
+          
+          <!-- Personal Loans -->
+          <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-100">
+            <div class="w-12 h-12 mb-4">
+              <img src="/assets/figmaimages/figma_image_76_96.svg" alt="Personal Loans" class="w-full h-full">
+            </div>
+            <h3 class="text-base font-semibold text-gray-900 mb-2">Personal Loans</h3>
+            <svg class="w-4 h-4 text-brand-orange" viewBox="0 0 13 10" fill="currentColor">
+              <path d="M7.5 1L12 5L7.5 9M12 5H1"/>
+            </svg>
+          </div>
+          
+          <!-- Car Insurance -->
+          <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-100">
+            <div class="w-12 h-12 mb-4">
+              <img src="/assets/figmaimages/figma_image_76_103.svg" alt="Car Insurance" class="w-full h-full">
+            </div>
+            <h3 class="text-base font-semibold text-gray-900 mb-2">Car Insurance</h3>
+            <svg class="w-4 h-4 text-brand-orange" viewBox="0 0 13 10" fill="currentColor">
+              <path d="M7.5 1L12 5L7.5 9M12 5H1"/>
+            </svg>
+          </div>
+          
+          <!-- Home Insurance -->
+          <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-100">
+            <div class="w-12 h-12 mb-4">
+              <img src="/assets/figmaimages/figma_image_76_111.svg" alt="Home Insurance" class="w-full h-full">
+            </div>
+            <h3 class="text-base font-semibold text-gray-900 mb-2">Home Insurance</h3>
+            <svg class="w-4 h-4 text-brand-orange" viewBox="0 0 13 10" fill="currentColor">
+              <path d="M7.5 1L12 5L7.5 9M12 5H1"/>
+            </svg>
+          </div>
+          
+          <!-- Life Insurance -->
+          <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gray-100">
+            <div class="w-12 h-12 mb-4">
+              <img src="/assets/figmaimages/figma_image_76_119.svg" alt="Life Insurance" class="w-full h-full">
+            </div>
+            <h3 class="text-base font-semibold text-gray-900 mb-2">Life Insurance</h3>
+            <svg class="w-4 h-4 text-brand-orange" viewBox="0 0 13 10" fill="currentColor">
+              <path d="M7.5 1L12 5L7.5 9M12 5H1"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Example image layers (replace/add as required by the JSON mappings in CSS) -->
-    <img id="img-76-165" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_165.png" />
-    <img id="img-76-168" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_168.png" />
-    <img id="img-76-169" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_169.png" />
-    <img id="img-76-171" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_171.png" />
-    <img id="img-76-172" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_172.png" />
-    <img id="img-76-180" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_180.png" />
-    <img id="img-76-203" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_203.png" />
-    <img id="img-76-208" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_208.png" />
-    <img id="img-76-212" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_212.png" />
-    <img id="img-76-216" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_216.png" />
-    <img id="img-76-217" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_217.png" />
-    <img id="img-76-221" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_221.png" />
-    <img id="img-76-226" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_226.png" />
-    <img id="img-76-238" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_238.png" />
-    <img id="img-76-247" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_247.png" />
-    <img id="img-76-252" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_252.png" />
-    <img id="img-76-256" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_256.png" />
-    <img id="img-76-261" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_261.png" />
-    <img id="img-76-272" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_272.png" />
-    <img id="img-76-282" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_282.png" />
-    <img id="img-76-287" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_287.png" />
-    <img id="img-76-291" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_291.png" />
-    <img id="img-76-294" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_294.png" />
-    <img id="img-76-308" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_308.png" />
-    <img id="img-76-309" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_309.png" />
-    <img id="img-76-310" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_310.png" />
-    <img id="img-76-311" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_311.png" />
-    <img id="img-76-313" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_313.png" />
-    <img id="img-76-319" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_319.png" />
-    <img id="img-76-430" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_430.png" />
-    <img id="img-76-472" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_472.png" />
-    <img id="img-76-476" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_476.png" />
-    <img id="img-76-480" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_480.png" />
-    <img id="img-76-484" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_484.png" />
-    <img id="img-76-489" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_489.png" />
-    <img id="img-76-493" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_493.png" />
-    <img id="img-76-497" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_497.png" />
-    <img id="img-76-501" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_501.png" />
-    <img id="img-76-506" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_506.png" />
-    <img id="img-76-510" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_510.png" />
-    <img id="img-76-518" class="layer image" alt="" src="../../assets/figmaimages/figma_image_76_518.png" />
+    <!-- Why Choose Us Section -->
+    <section class="w-full bg-white py-20 px-[100px]">
+      <div class="grid grid-cols-2 gap-16">
+        <!-- Left Column: Content -->
+        <div>
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
+          <p class="text-lg text-gray-600 mb-12">
+            Experience seamless banking with competitive rates and expert guidance
+          </p>
+          
+          <div class="space-y-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">Our Promises</h3>
+            
+            <!-- Promise 1 -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-lg bg-brand-orange flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                </svg>
+              </div>
+              <p class="text-base text-gray-700 font-medium pt-3">We show all options we compare</p>
+            </div>
+            
+            <!-- Promise 2 -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                </svg>
+              </div>
+              <p class="text-base text-gray-700 pt-3">Expert guidance, always</p>
+            </div>
+            
+            <!-- Promise 3 -->
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                </svg>
+              </div>
+              <p class="text-base text-gray-700 pt-3">No complicated jargon</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Column: Image -->
+        <div class="relative">
+          <img src="/assets/figmaimages/figma_image_76_165.png" alt="Why Choose Us" class="w-full h-[551px] object-cover rounded-2xl shadow-xl">
+        </div>
+      </div>
+    </section>
 
-    <!-- Example text layers (content and styles controlled via CSS to match JSON) -->
-    <div id="text-76-11" class="layer text" role="textbox" aria-label="text-76-11"> </div>
-    <!-- Additional text nodes will be defined in CSS with precise typography. -->
+    <!-- Business Partners Section -->
+    <section class="w-full bg-gray-50 py-16 px-[100px]">
+      <div class="text-center mb-12">
+        <div class="flex items-center justify-center gap-8 mb-6">
+          <div class="w-20 h-px bg-gray-300"></div>
+          <h2 class="text-3xl font-bold text-gray-900">Our Business Partners</h2>
+          <div class="w-12 h-px bg-gray-300"></div>
+        </div>
+      </div>
+      
+      <div class="flex items-center justify-center gap-16 flex-wrap">
+        <img src="/assets/figmaimages/figma_image_76_168.png" alt="Partner 1" class="h-8 opacity-60 hover:opacity-100 transition-opacity">
+        <img src="/assets/figmaimages/figma_image_76_169.png" alt="Partner 2" class="h-8 opacity-60 hover:opacity-100 transition-opacity">
+        <img src="/assets/figmaimages/figma_image_76_171.png" alt="Partner 3" class="h-8 opacity-60 hover:opacity-100 transition-opacity">
+        <img src="/assets/figmaimages/figma_image_76_172.png" alt="Partner 4" class="h-8 opacity-60 hover:opacity-100 transition-opacity">
+      </div>
+    </section>
+
+    <!-- Customer Feedback Section -->
+    <section class="w-full bg-white py-20 px-[100px]">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Customer Feedback</h2>
+        <p class="text-lg text-gray-600">
+          Gather insights and opinions to improve products, services, and customer satisfaction.
+        </p>
+      </div>
+      
+      <!-- Testimonials Grid -->
+      <div class="grid grid-cols-4 gap-6">
+        <!-- Testimonial Card 1 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+          <!-- Star Rating -->
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed mb-6">
+            Fast, reliable, and hassle-free loan approval – couldn't ask for more!
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+            <span class="text-sm font-semibold text-gray-900">Aliyaa Butt</span>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 2 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed mb-6">
+            The customer service team made the entire process so easy to understand.
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+            <span class="text-sm font-semibold text-gray-900">Sumara Ali</span>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed mb-6">
+            Transparent terms and quick disbursement – highly recommended!
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+            <span class="text-sm font-semibold text-gray-900">Kashan Ali</span>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 4 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed mb-6">
+            Their flexible repayment options truly set them apart from the rest.
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+            <span class="text-sm font-semibold text-gray-900">Sameena</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Testimonials Row -->
+      <div class="grid grid-cols-4 gap-6 mt-6">
+        <!-- Additional testimonial cards would continue here -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed mb-6">
+            Competitive rates and no hidden fees – a trustworthy partner for loans.
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+            <span class="text-sm font-semibold text-gray-900">Anila Alam</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed mb-6">
+            The online application was seamless, and I got my loan approved in hours.
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+            <span class="text-sm font-semibold text-gray-900">Sonia Alam</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed mb-6">
+            Their financial advisors provided expert guidance tailored to my needs.
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+            <span class="text-sm font-semibold text-gray-900">Sibtain Ali</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed mb-6">
+            I felt supported every step of the way – exceptional service!
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+            <span class="text-sm font-semibold text-gray-900">Junaid Alam</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Blogs Section -->
+    <section class="w-full bg-white py-20 px-[100px]">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Blogs</h2>
+        <p class="text-lg text-gray-600">
+          Stay updated with the latest insights, news, and expert blogs!
+        </p>
+      </div>
+
+      <!-- Car Loans Blogs -->
+      <div class="mb-16">
+        <div class="flex items-center gap-4 mb-8">
+          <svg class="w-8 h-8 text-gray-800" viewBox="0 0 32 32" fill="currentColor">
+            <path d="M28 12h-4l-3-6H11L8 12H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h24c1.1 0 2-.9 2-2V14c0-1.1-.9-2-2-2zM11.5 7h9l2 5h-13l2-5zM8 22c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm16 0c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+          </svg>
+          <h3 class="text-2xl font-bold text-gray-900">Car loans</h3>
+        </div>
+        
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Blog Card 1 -->
+          <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+            <img src="/assets/figmaimages/figma_image_76_203.png" alt="Car Loan Article" class="w-full h-32 object-cover">
+            <div class="p-6">
+              <span class="text-xs text-gray-500 uppercase tracking-wide">Car loans</span>
+              <h4 class="text-lg font-bold text-gray-900 mt-2 mb-3">Driving Your Dream A Guide to Car Loans</h4>
+              <div class="flex items-center gap-2">
+                <img src="/assets/figmaimages/figma_image_76_208.png" alt="Author" class="w-6 h-6 rounded-full">
+                <span class="text-sm text-gray-600">Sameer Ali</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 2 -->
+          <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+            <img src="/assets/figmaimages/figma_image_76_212.png" alt="Car Loan Article" class="w-full h-32 object-cover">
+            <div class="p-6">
+              <span class="text-xs text-gray-500 uppercase tracking-wide">Car loans</span>
+              <h4 class="text-lg font-bold text-gray-900 mt-2 mb-3">Everything You Need to Know About Car Loans</h4>
+              <div class="flex items-center gap-2">
+                <img src="/assets/figmaimages/figma_image_76_217.png" alt="Author" class="w-6 h-6 rounded-full">
+                <span class="text-sm text-gray-600">Sofia Alam</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 3 -->
+          <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+            <img src="/assets/figmaimages/figma_image_76_221.png" alt="Car Loan Article" class="w-full h-32 object-cover">
+            <div class="p-6">
+              <span class="text-xs text-gray-500 uppercase tracking-wide">Car loans</span>
+              <h4 class="text-lg font-bold text-gray-900 mt-2 mb-3">Unlocking the Best Car Loan Options</h4>
+              <div class="flex items-center gap-2">
+                <img src="/assets/figmaimages/figma_image_76_226.png" alt="Author" class="w-6 h-6 rounded-full">
+                <span class="text-sm text-gray-600">Ali Sher</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Personal Loans Blogs -->
+      <div class="mb-16">
+        <div class="flex items-center gap-4 mb-8">
+          <svg class="w-8 h-8 text-gray-800" viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16 3C8.82 3 3 8.82 3 16s5.82 13 13 13 13-5.82 13-13S23.18 3 16 3zm0 2c6.08 0 11 4.92 11 11s-4.92 11-11 11S5 22.08 5 16 9.92 5 16 5zm-1 3v10h2V8h-2zm0 12v2h2v-2h-2z"/>
+          </svg>
+          <h3 class="text-2xl font-bold text-gray-900">Personal loans</h3>
+        </div>
+        
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Blog Card 1 -->
+          <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+            <img src="/assets/figmaimages/figma_image_76_238.png" alt="Personal Loan Article" class="w-full h-32 object-cover">
+            <div class="p-6">
+              <span class="text-xs text-gray-500 uppercase tracking-wide">Personal loans</span>
+              <h4 class="text-lg font-bold text-gray-900 mt-2 mb-3">Top Benefits of Personal Loans You Should Know</h4>
+              <div class="flex items-center gap-2">
+                <div class="w-6 h-6 rounded-full bg-gray-200"></div>
+                <span class="text-sm text-gray-600">Asma Ali</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 2 -->
+          <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+            <img src="/assets/figmaimages/figma_image_76_247.png" alt="Personal Loan Article" class="w-full h-32 object-cover">
+            <div class="p-6">
+              <span class="text-xs text-gray-500 uppercase tracking-wide">Personal loans</span>
+              <h4 class="text-lg font-bold text-gray-900 mt-2 mb-3">Smart Tips for Choosing the Best Personal Loan</h4>
+              <div class="flex items-center gap-2">
+                <img src="/assets/figmaimages/figma_image_76_252.png" alt="Author" class="w-6 h-6 rounded-full">
+                <span class="text-sm text-gray-600">Jahangir Ali</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 3 -->
+          <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+            <img src="/assets/figmaimages/figma_image_76_256.png" alt="Personal Loan Article" class="w-full h-32 object-cover">
+            <div class="p-6">
+              <span class="text-xs text-gray-500 uppercase tracking-wide">Personal loans</span>
+              <h4 class="text-lg font-bold text-gray-900 mt-2 mb-3">Your Guide to Financial Freedom</h4>
+              <div class="flex items-center gap-2">
+                <img src="/assets/figmaimages/figma_image_76_261.png" alt="Author" class="w-6 h-6 rounded-full">
+                <span class="text-sm text-gray-600">Mujeeb Ali</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Business Loans Blogs -->
+      <div class="mb-8">
+        <div class="flex items-center gap-4 mb-8">
+          <svg class="w-8 h-8 text-gray-800" viewBox="0 0 32 32" fill="currentColor">
+            <path d="M28 24V8c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2zM6 8h20v16H6V8zm2 2v2h16v-2H8zm0 4v2h16v-2H8zm0 4v2h10v-2H8z"/>
+          </svg>
+          <h3 class="text-2xl font-bold text-gray-900">Business loans</h3>
+        </div>
+        
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Blog Card 1 -->
+          <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+            <img src="/assets/figmaimages/figma_image_76_272.png" alt="Business Loan Article" class="w-full h-32 object-cover">
+            <div class="p-6">
+              <span class="text-xs text-gray-500 uppercase tracking-wide">Business loans</span>
+              <h4 class="text-lg font-bold text-gray-900 mt-2 mb-3">Unlock Growth with Business Loans</h4>
+              <div class="flex items-center gap-2">
+                <div class="w-6 h-6 rounded-full bg-gray-200"></div>
+                <span class="text-sm text-gray-600">Faith John</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 2 -->
+          <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+            <img src="/assets/figmaimages/figma_image_76_282.png" alt="Business Loan Article" class="w-full h-32 object-cover">
+            <div class="p-6">
+              <span class="text-xs text-gray-500 uppercase tracking-wide">Business overdraft</span>
+              <h4 class="text-lg font-bold text-gray-900 mt-2 mb-3">Smart Funding Solutions for Businesses</h4>
+              <div class="flex items-center gap-2">
+                <img src="/assets/figmaimages/figma_image_76_287.png" alt="Author" class="w-6 h-6 rounded-full">
+                <span class="text-sm text-gray-600">Mueez Ali</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 3 -->
+          <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+            <img src="/assets/figmaimages/figma_image_76_291.png" alt="Business Loan Article" class="w-full h-32 object-cover">
+            <div class="p-6">
+              <span class="text-xs text-gray-500 uppercase tracking-wide">Business line of credit</span>
+              <h4 class="text-lg font-bold text-gray-900 mt-2 mb-3">Quick Business Loans, Big Opportunities</h4>
+              <div class="flex items-center gap-2">
+                <img src="/assets/figmaimages/figma_image_76_294.png" alt="Author" class="w-6 h-6 rounded-full">
+                <span class="text-sm text-gray-600">Eshamm Ali</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Banks Interest Rates Section -->
+    <section class="w-full bg-gradient-to-b from-gray-50 to-white py-20 px-[100px]">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Popular Banks Interest Rates</h2>
+        <p class="text-lg text-gray-600">
+          Compare the latest interest rates from popular banks to make informed financial decisions.
+        </p>
+      </div>
+
+      <!-- Bank Cards Grid -->
+      <div class="grid grid-cols-4 gap-6 mb-8">
+        <!-- Bank Card 1 -->
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow border border-gray-100 text-center">
+          <img src="/assets/figmaimages/figma_image_76_472.png" alt="UBL Bank" class="h-12 mx-auto mb-4">
+          <h3 class="text-base font-semibold text-gray-900">UBL Bank</h3>
+        </div>
+
+        <!-- Bank Card 2 -->
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow border border-gray-100 text-center">
+          <img src="/assets/figmaimages/figma_image_76_476.png" alt="Bank Alfalah" class="h-12 mx-auto mb-4">
+          <h3 class="text-base font-semibold text-gray-900">Bank Alfalah</h3>
+        </div>
+
+        <!-- Bank Card 3 -->
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow border border-gray-100 text-center">
+          <img src="/assets/figmaimages/figma_image_76_480.png" alt="HBL" class="h-12 mx-auto mb-4">
+          <h3 class="text-base font-semibold text-gray-900">Bank Alfalah</h3>
+        </div>
+
+        <!-- Bank Card 4 -->
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow border border-gray-100 text-center">
+          <img src="/assets/figmaimages/figma_image_76_484.png" alt="BOP" class="h-12 mx-auto mb-4">
+          <h3 class="text-base font-semibold text-gray-900">BOP Alfalah</h3>
+        </div>
+
+        <!-- Bank Card 5 -->
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow border border-gray-100 text-center">
+          <img src="/assets/figmaimages/figma_image_76_489.png" alt="Allied Bank" class="h-12 mx-auto mb-4">
+          <h3 class="text-base font-semibold text-gray-900">Allied Bank</h3>
+        </div>
+
+        <!-- Bank Card 6 -->
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow border border-gray-100 text-center">
+          <img src="/assets/figmaimages/figma_image_76_493.png" alt="Faysal Bank" class="h-12 mx-auto mb-4">
+          <h3 class="text-base font-semibold text-gray-900">Bank Alfalah</h3>
+        </div>
+
+        <!-- Bank Card 7 -->
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow border border-gray-100 text-center">
+          <img src="/assets/figmaimages/figma_image_76_497.png" alt="Meezan Bank" class="h-12 mx-auto mb-4">
+          <h3 class="text-base font-semibold text-gray-900">Meezan Bank</h3>
+        </div>
+
+        <!-- Bank Card 8 -->
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow border border-gray-100 text-center">
+          <img src="/assets/figmaimages/figma_image_76_501.png" alt="Bank Al Habib" class="h-12 mx-auto mb-4">
+          <h3 class="text-base font-semibold text-gray-900">Bank Al Habib</h3>
+        </div>
+
+        <!-- Bank Card 9 -->
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow border border-gray-100 text-center">
+          <img src="/assets/figmaimages/figma_image_76_506.png" alt="MCB Bank" class="h-12 mx-auto mb-4">
+          <h3 class="text-base font-semibold text-gray-900">MCB Bank</h3>
+        </div>
+
+        <!-- Bank Card 10 -->
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow border border-gray-100 text-center">
+          <img src="/assets/figmaimages/figma_image_76_510.png" alt="Askari Bank" class="h-12 mx-auto mb-4">
+          <h3 class="text-base font-semibold text-gray-900">Askari Bank</h3>
+        </div>
+
+        <!-- Bank Card 11 -->
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow border border-gray-100 text-center">
+          <img src="/assets/figmaimages/figma_image_76_480.png" alt="Standard Chartered" class="h-12 mx-auto mb-4">
+          <h3 class="text-base font-semibold text-gray-900">Bank Alfalah</h3>
+        </div>
+
+        <!-- Bank Card 12 -->
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow border border-gray-100 text-center">
+          <img src="/assets/figmaimages/figma_image_76_518.png" alt="Meezan Bank" class="h-12 mx-auto mb-4">
+          <h3 class="text-base font-semibold text-gray-900">Meezan Bank</h3>
+        </div>
+      </div>
+
+      <!-- More Banks Button -->
+      <div class="text-center">
+        <button class="inline-flex items-center gap-2 px-8 py-3 bg-brand-orange text-white rounded-lg font-semibold hover:bg-orange-600 transition-colors">
+          More Banks
+          <svg class="w-4 h-4" viewBox="0 0 13 10" fill="currentColor">
+            <path d="M7.5 1L12 5L7.5 9M12 5H1"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="w-full bg-white py-20 px-[100px]">
+      <div class="grid grid-cols-2 gap-16">
+        <!-- Left: FAQ List -->
+        <div>
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Frequently asked questions</h2>
+          <p class="text-lg text-gray-600 mb-12">Answers to common questions</p>
+
+          <!-- FAQ Accordion -->
+          <div class="space-y-4">
+            <!-- FAQ Item 1 - Open -->
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-gray-900">Can I pay off my loan early?</h3>
+                <svg class="w-6 h-6 text-brand-orange" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+              </p>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-brand-orange transition-colors cursor-pointer">
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg font-semibold text-gray-900">How much can I Banca?</h3>
+                <svg class="w-6 h-6 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-brand-orange transition-colors cursor-pointer">
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg font-semibold text-gray-900">Do you offering refinancing?</h3>
+                <svg class="w-6 h-6 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-brand-orange transition-colors cursor-pointer">
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg font-semibold text-gray-900">Can I do all of my banking with you?</h3>
+                <svg class="w-6 h-6 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-brand-orange transition-colors cursor-pointer">
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg font-semibold text-gray-900">When should i apply?</h3>
+                <svg class="w-6 h-6 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Illustration -->
+        <div class="relative">
+          <img src="/assets/figmaimages/figma_image_76_319.png" alt="FAQ Illustration" class="w-full h-auto">
+        </div>
+      </div>
+
+      <!-- Contact CTA -->
+      <div class="mt-20 bg-gradient-to-r from-brand-orange to-orange-600 rounded-2xl p-12 text-center relative overflow-hidden">
+        <!-- Decorative Icons -->
+        <img src="/assets/figmaimages/figma_image_76_308.png" alt="Icon" class="absolute top-4 right-20 w-12 h-12 opacity-30">
+        <img src="/assets/figmaimages/figma_image_76_309.png" alt="Icon" class="absolute bottom-8 left-32 w-10 h-10 opacity-30">
+        <img src="/assets/figmaimages/figma_image_76_310.png" alt="Icon" class="absolute top-12 left-64 w-16 h-16 opacity-20">
+        <img src="/assets/figmaimages/figma_image_76_311.png" alt="Icon" class="absolute top-4 right-80 w-20 h-20 opacity-20">
+        <img src="/assets/figmaimages/figma_image_76_313.png" alt="Icon" class="absolute bottom-4 left-1/2 w-16 h-8 opacity-30">
+        
+        <h2 class="text-3xl font-bold text-white mb-4">Have any question?</h2>
+        <p class="text-white text-lg mb-8">Ask us anything. Do you have a love question you want us to answer?</p>
+        <button class="px-10 py-4 bg-white text-brand-orange rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+          Contact Us
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="w-full bg-gray-50 py-20 px-[100px]">
+      <div class="grid grid-cols-2 gap-16">
+        <!-- Left: Form -->
+        <div class="space-y-6">
+          <div class="grid grid-cols-2 gap-6">
+            <div>
+              <label class="block text-base font-semibold text-gray-900 mb-2">First Name</label>
+              <input type="text" placeholder="Message" class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-orange">
+            </div>
+            <div>
+              <label class="block text-base font-semibold text-gray-900 mb-2">Last Name</label>
+              <input type="text" placeholder="Message" class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-orange">
+            </div>
+          </div>
+          
+          <div>
+            <label class="block text-base font-semibold text-gray-900 mb-2">Email</label>
+            <input type="email" placeholder="Message" class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-orange">
+          </div>
+          
+          <div>
+            <label class="block text-base font-semibold text-gray-900 mb-2">Phone Number</label>
+            <input type="tel" placeholder="Message" class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-orange">
+          </div>
+          
+          <div>
+            <label class="block text-base font-semibold text-gray-900 mb-2">Message</label>
+            <textarea rows="5" placeholder="Message" class="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-orange"></textarea>
+          </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="relative">
+          <div class="w-full h-full bg-gray-200 rounded-2xl"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-gray-900 text-white py-16 px-[100px]">
+      <div class="grid grid-cols-4 gap-12 mb-12">
+        <!-- Company Info -->
+        <div>
+          <h3 class="text-xl font-bold mb-6">We're on a mission.</h3>
+          <p class="text-gray-400 leading-relaxed">
+            At Owly HOME LOANS, we're using cutting edge technology to transform the industry and deliver financial services that actually work for you.
+          </p>
+        </div>
+
+        <!-- Company Links -->
+        <div>
+          <h4 class="text-base font-bold mb-6">Company</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cards</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Product Links -->
+        <div>
+          <h4 class="text-base font-bold mb-6">product</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Business Loans</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Loan Calculator</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Refer a Friend</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Partner Program</a></li>
+          </ul>
+        </div>
+
+        <!-- Help Links -->
+        <div>
+          <h4 class="text-base font-bold mb-6">Help</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Customer Care</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Executive Team</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Security Center</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Recognition</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="pt-8 border-t border-gray-800">
+        <div class="flex items-center justify-between">
+          <!-- Logo & Copyright -->
+          <div class="flex items-center gap-8">
+            <img src="/assets/figmaimages/figma_image_76_430.png" alt="Logo" class="h-10">
+            <div class="text-gray-400 text-sm">
+              Copyright © <span class="text-white">Owly HOME LOANS</span> 2024.
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div class="flex items-center gap-6">
+            <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privecy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Use</a>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="flex items-center gap-4">
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors">
+              <img src="/assets/figmaimages/figma_image_76_434.svg" alt="Facebook" class="w-4 h-4">
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors">
+              <img src="/assets/figmaimages/figma_image_76_437.svg" alt="Twitter" class="w-4 h-4">
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors">
+              <img src="/assets/figmaimages/figma_image_76_440.svg" alt="LinkedIn" class="w-4 h-4">
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors">
+              <img src="/assets/figmaimages/figma_image_76_443.svg" alt="Instagram" class="w-4 h-4">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </div>
-
-  <script src="./frame-2-76-2.js"></script>
 </body>
 </html>
