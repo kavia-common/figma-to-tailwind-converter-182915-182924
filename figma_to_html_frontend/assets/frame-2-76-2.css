@@ -1,0 +1,129 @@
+/* Global reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+/* PUBLIC_INTERFACE */
+/** Root artboard sized to match Figma frame 76:2 */
+#frame-2-76-2.artboard {
+  position: relative;
+  /* Set to the exact width and height from the JSON for the frame.
+     Update these values to match the Figma frame size. */
+  width: 1440px;   /* placeholder: replace with JSON width */
+  height: 1024px;  /* placeholder: replace with JSON height */
+  margin: 0 auto;
+  overflow: hidden;
+  background: #ffffff; /* or as per JSON fills */
+}
+
+/* Background layer if the frame has a background fill */
+.layer-bg {
+  position: absolute;
+  inset: 0;
+  background: #ffffff; /* replace with frame background fill if specified */
+}
+
+/* Generic layer styling */
+.layer {
+  position: absolute;
+  display: block;
+}
+
+/* Text base style - will be overridden per-node below with exact typography from JSON */
+.text {
+  white-space: pre-wrap; /* to respect line breaks if defined */
+  color: #111827; /* default text color, replace as per JSON */
+  font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* replace as per JSON font family */
+  font-size: 16px;       /* replace */
+  font-weight: 400;      /* replace */
+  line-height: 1.5;      /* replace with unitless or px based on JSON */
+  letter-spacing: 0;     /* replace */
+}
+
+/* Images: ensure no deformation beyond specified dimensions */
+.image {
+  object-fit: cover; /* or contain based on JSON constraints */
+  max-width: none;
+  max-height: none;
+}
+
+/* ========= Example exact mappings (placeholders) =========
+   Update each rule's left/top/width/height to match the JSON node's absolute bounding box.
+   Also apply border-radius, box-shadow, opacity, rotation (transform), etc., as specified.
+*/
+
+/* Example for an image node mapped to figma_image_76_165.png */
+#img-76-165 {
+  left: 0px;     /* replace with JSON */
+  top: 0px;      /* replace with JSON */
+  width: 100px;  /* replace with JSON */
+  height: 100px; /* replace with JSON */
+  /* border-radius: Xpx; */
+}
+
+/* Repeat for every included image node (values must come from the JSON exactly) */
+#img-76-168 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-169 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-171 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-172 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-180 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-203 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-208 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-212 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-216 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-217 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-221 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-226 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-238 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-247 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-252 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-256 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-261 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-272 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-282 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-287 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-291 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-294 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-308 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-309 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-310 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-311 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-313 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-319 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-430 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-472 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-476 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-480 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-484 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-489 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-493 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-497 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-501 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-506 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-510 { left: 0px; top: 0px; width: 100px; height: 100px; }
+#img-76-518 { left: 0px; top: 0px; width: 100px; height: 100px; }
+
+/* Example text node with exact positioning and typography (replace values) */
+#text-76-11 {
+  left: 40px;             /* replace with JSON */
+  top: 40px;              /* replace with JSON */
+  width: 400px;           /* replace with JSON */
+  height: auto;           /* based on content */
+  color: #111827;         /* JSON fill */
+  font-family: Inter, sans-serif; /* JSON font family */
+  font-size: 24px;        /* JSON font size */
+  font-weight: 700;       /* JSON weight */
+  line-height: 28px;      /* JSON line height */
+  letter-spacing: 0px;    /* JSON letter spacing */
+  /* text-transform: ...; */
+}
+
+/* Add additional rules for each text/image/shape node following the pattern above. */
