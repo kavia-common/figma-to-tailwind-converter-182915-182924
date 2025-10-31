@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/figma-to-tailwind-converter-182915-182924/figma_to_html_frontend"
+}
